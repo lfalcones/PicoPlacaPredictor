@@ -10,19 +10,4 @@
     	<fileset dir="${classes.dir}"/>
     </jar>
   </target>
-	<path id="JUnit 4.libraryclasspath">
-	        <pathelement location="...\plugins\org.junit_4.11.0.v201303080030\junit.jar"/>
-	        <pathelement location="...\plugins\org.hamcrest.core_1.3.0.v201303031735.jar"/>
-	        <pathelement location="...\lib\ant-junit4.jar"/>        
-	    </path>
-	    <path id="Ant1.classpath">
-	        <pathelement location="bin"/>
-	        <pathelement location="."/>
-	        <path refid="JUnit 4.libraryclasspath"/>
-	    </path>
-  <target name="test1" depends="makejar">
-    <junit>
-        <classpath refid="Ant1.classpath"/>
-    </junit>
-   </target>
 </project>
