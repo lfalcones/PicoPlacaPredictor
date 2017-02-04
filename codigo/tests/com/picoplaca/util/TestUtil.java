@@ -43,7 +43,7 @@ public class TestUtil {
 	
 	@Test
 	public void isTheLastDigit() throws GetDigitException{
-		//Arange
+		//Arrange
 		final String plate = new String("PBC4562");
 		Utilitario util = new Utilitario();
 		
@@ -52,6 +52,19 @@ public class TestUtil {
 		
 		//Assert
 		Assert.assertEquals(last, Integer.valueOf(2));
+	}
+	
+	@Test
+	public void shouldTransToDate() throws ParseException{
+		//Arrange
+		final String dateStr = new String("20170209");
+		final Date compare = new SimpleDateFormat( "yyyyMMdd" ).parse( "20170209" );
+		Utilitario util = new Utilitario();
+		
+		//Action
+		final Date dateD = util.toDate(dateStr);
+		
+		Assert.assertEquals(dateD, compare);
 	}
 
 }
