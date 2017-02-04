@@ -28,6 +28,7 @@ Prerequisito:
 3.- El archivo "PicoPlacaPredictor.jar" se genera dentro del directorio "codigo"
 
 -----------------Ejecución de archivos ".jar" si no tiene configurado Apache Ant ---------------
+
 Para su ejecución se crearon archivos ".jar" los cuales se encuentran en la carpeta "executable"
 
 * Ejecutar los ".jar"
